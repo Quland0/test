@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <title>Java</title>
+    <style>
+        * {box-sizing: border-box;}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .block {
+            width: 70%;
+            margin: auto;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333333;
+        }
+        p {
+            color: #555555;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #4CAF50;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 100px;
+            margin: auto;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .numbertext {
+            color: #000000;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #999999;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #111111;
+        }
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+            from {opacity: .4;}
+            to {opacity: 1;}
+        }
+        @keyframes fade {
+            from {opacity: .4;}
+            to {opacity: 1;}
+        }
+        @media only screen and (max-width: 300px) {
+            .prev,
+            .next,
+            .text {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="block">
+    <h1>Что такое Java?</h1>
+    <p><b>Java</b> – широко используемый язык программирования для написания интернет-приложений. Язык Java широко использовался на протяжении более двух десятилетий. Миллионы приложений Java используются и сегодня. Java – это многоплатформенный, объектно-ориентированный и сетецентрический язык, который сам по себе может использоваться как платформа. Это быстрый, безопасный и надежный язык программирования для всего: от мобильных приложений и корпоративного ПО до приложений для работы с большими данными и серверных технологий.</p>
+    <p>Java – это многоплатформенный, объектно-ориентированный и сетецентрический язык, который сам по себе может использоваться как платформа. Это быстрый, безопасный и надежный язык программирования для всего: от мобильных приложений и корпоративного ПО до приложений для работы с большими данными и серверных технологий.</p>
+    <a href="https://www.java.com/download/ie_manual.jsp" target="_blank">Download</a>
+</div>
+<div class="block">
+    <h1>Для чего используется язык программирования Java?</h1>
+    <p>Поскольку Java является бесплатным и универсальным языком, на нем создаются локализованные и распространяемые программы. Типичные примеры использования Java см. ниже.</p>
+    <ol>
+        <b><li>Разработка игр</li></b>
+        <p>Многие популярные мобильные, компьютерные и видеоигры созданы на Java. Даже современные игры, в которых используются передовые технологии, такие как машинное обучение или виртуальная реальность, создаются с использованием технологии Java.</p>
+        <b><li>Облачные вычисления</li></b>
+        <p>Язык Java часто называют WORA (Write Once and Run Anywhere – «Напиши один раз, запускай где угодно»), что делает его идеальным для децентрализованных облачных приложений. Поставщики облачных услуг выбирают язык Java для запуска программ на широком спектре базовых платформ.</p>
+        <b><li>Большие данные</li></b>
+        <p>Язык Java используется для механизмов обработки данных, которые могут работать со сложными наборами данных и большими объемами данных в режиме реального времени.</p>
+        <b><li>Искусственный интеллект</li></b>
+        <p>Java – это кладезь библиотек машинного обучения. Благодаря своей стабильности и скорости язык стал выбором № 1 для разработки приложений искусственного интеллекта, таких как обработка естественного языка и глубокое обучение.</p>
+        <b><li>Интернет вещей</li></b>
+        <p>Язык Java используется для программирования датчиков и аппаратного обеспечения периферийных устройств, которые могут независимо подключаться к Интернету.</p>
+    </ol>
+    <a href="https://javarush.com/groups/posts/gde-ispolzuetsya-java">Подробнее</a>
+</div>
+<div class="block">
+    <h1>Особенности языка программирования Java</h1>
+    <ul>
+        <li><b>Широкое распространение старых версий языка.</b>  Популярность Java в enterprise-сегменте означает, что большинство компаний используют не самые последние версии языка. Чаще всего речь идет о Java 8, хотя последняя версия на июль 2023 года — Java 20.</li><br>
+        <li><b>Сравнительно высокий уровень входа.</b>  Java предполагает совершенно иной подход к разработке, чем JavaScript, Python, PHP и другие. Если в большинстве языков понимание ООП можно получать постепенно, то в Java концепции нужно будет использовать едва ли не сразу. С другой стороны, рынок устроен так, что многие начинающие программисты выбирают Java первым языком программирования.</li><br>
+        <li><b>Многословный и сложный код.</b>  Java — средний уровень между C++, где все свои действия нужно описывать словами из английского языка, и лаконичными языками программирования. В Java часто встречаются длинные предложения, которые помогают при обучении, но сильно затрудняют чтение и понимание кода.</li>
+    </ul>
+    <a href="https://dzen.ru/list/gadgets/gde-na-klaviature-kompiutera-tochka-nakhoditsia">Точка</a>
+</div>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="images\800.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="images\2.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="images\1.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+</body>
+</html>
